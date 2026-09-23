@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduPortal — Student Learning Management System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: #ffffff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        nav a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+            flex: 1;
+        }
+
+        .hero-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .hero-card h2 {
+            color: #0f172a;
+            margin-bottom: 1rem;
+        }
+
+        .hero-card p {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            background-color: #dcfce7;
+            color: #166534;
+            padding: 0.35rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h3 {
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎓 EduPortal</h1>
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Courses</a>
+            <a href="#">Exams</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero-card">
+            <span class="status-badge">System Status: Active</span>
+            <h2 style="margin-top: 1rem;">Welcome to EduPortal Engine</h2>
+            <p>An integrated platform for automated student registration, course enrollment verification, and secure online examination processing.</p>
+        </div>
+
+        <div class="modules-grid">
+            <div class="card">
+                <h3>Student Authentication</h3>
+                <p>JWT-based secure login portal supporting Student, Faculty, and Admin roles.</p>
+            </div>
+            <div class="card">
+                <h3>Course Enrollment</h3>
+                <p>Automated seat limit verification, credit threshold checks, and prerequisite logic.</p>
+            </div>
+            <div class="card">
+                <h3>Examination Engine</h3>
+                <p>Real-time timer processing, file submission validation, and auto-submit features.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 EduPortal — Software Engineering Practical Workflows</p>
+    </footer>
+
+</body>
+</html>
